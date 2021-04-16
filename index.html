@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brot</title>
+    <title>Team-Brot</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"> 
     <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-icon-57x57.png">
@@ -76,7 +76,7 @@ a:hover, a:visited:hover {
 }
 
 .align-items-center {
-    align-items: center
+    align-items: center;
 }
 
 .profile {
@@ -84,15 +84,29 @@ a:hover, a:visited:hover {
     height: 108px
 }
 
-.w-50 {
-    width: 100%;
+.fb-80 {
+    flex-basis: 80%;
 }
 
 @media only screen and (min-width: 800px) {
-    .w-50 {
-        width: 50%;
+    .fb-80 {
+        flex-basis: 37%;
+        flex-shrink: 1;
     }
 }
+
+.space-evenly {
+    justify-content: center;
+}
+
+@media only screen and (min-width: 800px) {
+    .space-evenly {
+        justify-content: space-evenly;
+    }
+}
+
+
+
 
 </style>
 </head>
@@ -104,32 +118,32 @@ a:hover, a:visited:hover {
 
         <div class="font-lg mb-36">We are Team Brot, a finalist team in the <a href="https://github.com/informatiCup/informatiCup2021">informatiCup 2021</a> competition.</div>
 
-        <div class="flex flex-wrap">
-            <div class="flex align-items-center mb-36 w-50">
+        <div class="flex flex-wrap space-evenly">
+            <div class="flex align-items-center mb-36 fb-80">
                 <img class="profile" src="/assets/images/jacob.webp">
                 <div class="ml-21">
                     <div class="font-lg"><b>Jacob Schäfer</b></div>
                     <code><a href="https://github.com/jacob271">@jacob271</a></code>
                 </div>
             </div>
-            <div class="flex align-items-center mb-36 w-50">
+            <div  class="flex align-items-center mb-36 fb-80">
                 <img class="profile" src="/assets/images/alex.webp">
                 <div class="ml-21">
-                    <div style="font-size: large"><b>Alexander Sohn</b></div>
+                    <div class="font-lg"><b>Alexander Sohn</b></div>
                     <code><a href="https://github.com/sohn123">@sohn123</a></code>
                 </div>
             </div>
-            <div class="flex align-items-center mb-36 w-50">
+            <div  class="flex align-items-center mb-36 fb-80">
                 <img class="profile" src="/assets/images/richard.webp">
-                <div style="margin-left: 21px">
-                    <div style="font-size: large"><b>Richard Wohlbold</b></div>
+                <div class="ml-21">
+                    <div class="font-lg"><b>Richard Wohlbold</b></div>
                     <code><a href="https://github.com/rgwohlbold">@rgwohlbold</a></code>
                 </div>
             </div>
-            <div class="flex align-items-center mb-36 w-50">
+            <div  class="flex align-items-center mb-36 fb-80">
                 <img class="profile" src="/assets/images/lilly.webp">
-                <div style="margin-left: 21px">
-                    <div style="font-size: large"><b>Lilly Zintl</b></div>
+                <div class="ml-21">
+                    <div class="font-lg"><b>Lilly Zintl</b></div>
                     <code><a href="https://github.com/lill28">@lill28</a></code>
                 </div>
             </div>
