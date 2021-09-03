@@ -1,12 +1,13 @@
 <!doctype html>
 
 <html lang="en">
-<head>
+
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Brot</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-icon-72x72.png">
@@ -16,7 +17,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicons/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicons/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicons/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
@@ -25,142 +26,144 @@
     <meta name="msapplication-TileColor" content="#f6a800">
     <meta name="msapplication-TileImage" content="/assets/favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#f6a800">
-<style>
-body {
-    font-family: 'Lato', sans-serif;
-}
+    <style>
+      body {
+        font-family: 'Lato', sans-serif;
+      }
+      
+      a {
+        color: #f6a800;
+        text-decoration: none;
+      }
+      
+      a:visited {
+        color: #f6a800;
+      }
+      
+      a:hover,
+      a:visited:hover {
+        text-decoration: none;
+        color: #bb8000;
+      }
+      
+      #container {
+        margin: 36px;
+      }
+      
+      @media only screen and (min-width: 800px) {
+        #container {
+          max-width: 800px;
+          margin: 36px auto;
+        }
+      }
+      
+      .mb-36 {
+        margin-bottom: 36px;
+      }
+      
+      .ml-21 {
+        margin-left: 21px;
+      }
+      
+      .font-lg {
+        font-size: large;
+      }
+      
+      .flex {
+        display: flex;
+      }
+      
+      .flex-wrap {
+        flex-wrap: wrap;
+      }
+      
+      .align-items-center {
+        align-items: center;
+      }
+      
+      .profile {
+        border-radius: 50%;
+        height: 108px
+      }
+      
+      .fb-80 {
+        flex-basis: 80%;
+      }
+      
+      @media only screen and (min-width: 800px) {
+        .fb-80 {
+          flex-basis: 37%;
+          flex-shrink: 1;
+        }
+      }
+      
+      .space-evenly {
+        justify-content: center;
+      }
+      
+      @media only screen and (min-width: 800px) {
+        .space-evenly {
+          justify-content: space-evenly;
+        }
+      }
+    </style>
+  </head>
 
-a {
-    color: #f6a800;
-    text-decoration: none;
-}
-
-a:visited {
-    color: #f6a800;
-}
-
-a:hover, a:visited:hover {
-    text-decoration: none;
-    color: #bb8000;
-}
-
-#container {
-    margin: 36px;
-}
-
-@media only screen and (min-width: 800px) {
-    #container {
-        max-width: 800px; 
-        margin: 36px auto;
-    }
-}
-
-.mb-36 {
-    margin-bottom: 36px;
-}
-
-.ml-21 {
-    margin-left: 21px;
-}
-
-.font-lg {
-    font-size: large;
-}
-
-.flex {
-    display: flex;
-}
-
-.flex-wrap {
-    flex-wrap: wrap;
-}
-
-.align-items-center {
-    align-items: center;
-}
-
-.profile {
-    border-radius: 50%;
-    height: 108px
-}
-
-.fb-80 {
-    flex-basis: 80%;
-}
-
-@media only screen and (min-width: 800px) {
-    .fb-80 {
-        flex-basis: 37%;
-        flex-shrink: 1;
-    }
-}
-
-.space-evenly {
-    justify-content: center;
-}
-
-@media only screen and (min-width: 800px) {
-    .space-evenly {
-        justify-content: space-evenly;
-    }
-}
-
-
-
-
-</style>
-</head>
-<body>
+  <body>
     <div id="container">
-        <div class="mb-36">
-            <img src="/assets/images/brot-icup.png" style="max-width: 100%">
+      <div class="mb-36">
+        <img src="/assets/images/brot-icup.png" style="max-width: 100%">
+      </div>
+
+      <div class="font-lg mb-36">We are Team Brot, a finalist team in the <a href="https://github.com/informatiCup/informatiCup2021">informatiCup 2021</a> competition.</div>
+
+      <div class="flex flex-wrap space-evenly">
+        <div class="flex align-items-center mb-36 fb-80">
+          <img class="profile" src="/assets/images/jacob.webp">
+          <div class="ml-21">
+            <div class="font-lg"><b>Jacob Schäfer</b></div>
+            <code><a href="https://github.com/jacob271">@jacob271</a></code>
+          </div>
         </div>
-
-        <div class="font-lg mb-36">We are Team Brot, a finalist team in the <a href="https://github.com/informatiCup/informatiCup2021">informatiCup 2021</a> competition.</div>
-
-        <div class="flex flex-wrap space-evenly">
-            <div class="flex align-items-center mb-36 fb-80">
-                <img class="profile" src="/assets/images/jacob.webp">
-                <div class="ml-21">
-                    <div class="font-lg"><b>Jacob Schäfer</b></div>
-                    <code><a href="https://github.com/jacob271">@jacob271</a></code>
-                </div>
-            </div>
-            <div  class="flex align-items-center mb-36 fb-80">
-                <img class="profile" src="/assets/images/alex.webp">
-                <div class="ml-21">
-                    <div class="font-lg"><b>Alexander Sohn</b></div>
-                    <code><a href="https://github.com/sohn123">@sohn123</a></code>
-                </div>
-            </div>
-            <div  class="flex align-items-center mb-36 fb-80">
-                <img class="profile" src="/assets/images/richard.webp">
-                <div class="ml-21">
-                    <div class="font-lg"><b>Richard Wohlbold</b></div>
-                    <code><a href="https://github.com/rgwohlbold">@rgwohlbold</a></code>
-                </div>
-            </div>
-            <div  class="flex align-items-center mb-36 fb-80">
-                <img class="profile" src="/assets/images/lilly.webp">
-                <div class="ml-21">
-                    <div class="font-lg"><b>Lilly Zintl</b></div>
-                    <code><a href="https://github.com/lill28">@lill28</a></code>
-                </div>
-            </div>
+        <div class="flex align-items-center mb-36 fb-80">
+          <img class="profile" src="/assets/images/alex.webp">
+          <div class="ml-21">
+            <div class="font-lg"><b>Alexander Sohn</b></div>
+            <code><a href="https://github.com/sohn123">@sohn123</a></code>
+          </div>
         </div>
+        <div class="flex align-items-center mb-36 fb-80">
+          <img class="profile" src="/assets/images/richard.webp">
+          <div class="ml-21">
+            <div class="font-lg"><b>Richard Wohlbold</b></div>
+            <code><a href="https://github.com/rgwohlbold">@rgwohlbold</a></code>
+          </div>
+        </div>
+        <div class="flex align-items-center mb-36 fb-80">
+          <img class="profile" src="/assets/images/lilly.webp">
+          <div class="ml-21">
+            <div class="font-lg"><b>Lilly Zintl</b></div>
+            <code><a href="https://github.com/lill28">@lill28</a></code>
+          </div>
+        </div>
+      </div>
 
-        <div class="mb-36 font-lg">Our solution consists of a <a href="https://github.com/TeamBrot/paper/blob/main/ausarbeitung.pdf">paper</a>, a <a href="https://github.com/TeamBrot/client">client implementation</a> and a <a href="https://github.com/TeamBrot/server">development server</a>.</div>
+      <div class="mb-36 font-lg">Our solution consists of a <a href="https://github.com/TeamBrot/paper/blob/main/ausarbeitung.pdf">paper</a>, a <a href="https://github.com/TeamBrot/client">client implementation</a> and a <a href="https://github.com/TeamBrot/server">development server</a>.</div>
 
-        <div class="mb-36 font-lg">You can download our paper as a PDF <a href="https://github.com/TeamBrot/paper/raw/main/ausarbeitung.pdf">here</a>.</div>
+      <div class="mb-36 font-lg">You can download our paper as a PDF <a href="https://github.com/TeamBrot/paper/raw/main/ausarbeitung.pdf">here</a>.</div>
 
-        <div class="mb-36 font-lg">Here is a video from a test game on the official API (our player is <font color="#f6a800">■</font>):</div>
+      <div class="mb-36 font-lg">A video about our solution is available <a href="https://www.youtube.com/watch?v=WYvSaGtD8E0">here</a>.</div>
 
-        <video style="width: 100%" class="mb-36" controls>
+      <div class="mb-36 font-lg">Here is a video from a test game on the official API (our player is
+        <font color="#f6a800">■</font>):</div>
+
+      <video style="width: 100%" class="mb-36" controls>
           <source src="/assets/videos/combi.mp4" type="video/mp4">
           Your browser does not support the video tag.
-        </video> 
+        </video>
 
 
     </div>
-</body>
+  </body>
+
 </html>
